@@ -1,0 +1,22 @@
+{
+  "name": "fsjones",
+  "version": "1.0.0",
+  "description": "Front end webpage for Frank Jones  regencytitleandclosing.com to be completed by ohmbru",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatno1r/fsjones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chatno1r/fsjones/issues"
+  },
+  "homepage": "https://github.com/chatno1r/fsjones#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
