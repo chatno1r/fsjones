@@ -1,0 +1,39 @@
+/*#background {
+    background-color:lightblue;
+}*/
+/*.page-header {
+    padding: 0;
+}
+.navbar.navbar-default {
+    background-color: maroon;
+}*/
+#title {
+    margin-left: 24%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+#navposition {
+    margin-left: 24%;
+}
+#welcometext {
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+    font-family: Verdana;
+    font-size: 2em;
+    color: maroon;
+}
+#textarea {
+    border: lightgray solid 0.2em;
+    border-radius: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 5em;
+    margin-bottom: 2em;
+    font-size: 1em;
+}
+#footerlink {
+    margin-left: 39%;
+    text-decoration: none;
+}

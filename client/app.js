@@ -18,6 +18,14 @@ angular.module("FSJones", ["ngRoute", "ngResource", "FSJones.controllers", "FSJo
         templateUrl: "views/forms.html",
         controller: "FormsController"
     })
+    .when("/refinanceform", {
+        templateUrl: "views/refinanceform.html",
+        controller: "FormsController"
+    })
+    .when("/purchaseform", {
+        templateUrl: "views/purchaseform.html",
+        controller: "FormsController"
+    })
     .when("/contact", {
         templateUrl: "views/contact.html",
         controller: "ContactController"
