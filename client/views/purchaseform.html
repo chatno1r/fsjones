@@ -1,1 +1,278 @@
-<h1>Purchase Form</h1>
+<div class="container-fluid">
+    <div id="welcometext">Purchase Form</div>
+        <div id="formbox">
+            <form method="post" action="registration_process.php" name="registration_form" id="aform" enctype="multipart/form-data" onsubmit="return validate(this)">
+            <br>
+                    <fieldset>
+                    <legend>Title Search information</legend>
+            
+            <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company:    
+                    <input type="text" alt="" class="inputbox" name="company" size="20" maxlength="80" value=""> 
+                    <span class="required">*</span></label>
+                
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Ordered:     
+                    <input type="text" alt="" class="inputbox" name="date_ordered" size="20" maxlength="30" value="">
+                    <span class="required">*</span>
+                    </label>
+                    
+                    <br>
+                    <br>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Need by:     
+                    <input type="text" alt="" class="inputbox" name="need_by" size="20" maxlength="30" value="">
+                    <span class="required">*</span>
+                    </label>
+
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ordered By:      
+                    <input type="text" alt="" class="inputbox" name="ordered_by" size="20" maxlength="80" value="">
+                    <span class="required">*</span></label>
+                    
+                    <br>
+                    <br>
+                    
+                    <label>Office Phone: 
+                    <input type="text" alt="" class="inputbox" name="office_phone" size="20" maxlength="20" value="">
+                    <span class="required">*</span></label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return Fax#: 
+                    <input type="text" alt="" class="inputbox" name="return_fax" size="20" maxlength="20" value="">
+                    </label>
+                    <br>
+                    <br>
+
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:
+                    <input type="text" alt="" class="inputbox" name="email" size="20" maxlength="80" value=""> 
+                    <span class="required">*</span></label>
+                            
+            <hr>
+
+                    <label>Property Address:       
+                    <input type="text" alt="" class="inputbox" name="property_address" size="70" maxlength="100" value=""> 
+                    <span class="required">*</span></label>
+                    
+                    <br>
+                    <br>
+                    
+                    <label>Brief Legal Description:<br>
+                    <textarea cols="80" rows="4" alt="" class="inputbox" name="property_legal_description" size="20" maxlength="100" value=""></textarea>
+                    </label>
+                    
+                    <br>
+                    <br>
+
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parcel ID:        
+                    <input type="text" alt="" class="inputbox" name="parcel_id" size="20" maxlength="30" value=""> 
+                    </label><span class="required">*</span>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;County:        
+                    <input type="text" alt="" class="inputbox" name="county" size="20" maxlength="30" value=""> 
+                    </label><span class="required">*</span>
+                            
+                    </fieldset>
+                    
+                    <br>
+                    
+                    <fieldset>
+                    <legend>Interested Parties</legend>
+                    
+                    <label>Purchaser/Borrower(s): 
+                    <input type="text" alt="" class="inputbox" name="purchaser" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSN(s): 
+                    <input type="text" alt="" class="inputbox" name="purchaser_ssn" size="20" maxlength="30" value="">
+                    </label>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additional Borrower: 
+                    <input type="text" alt="" class="inputbox" name="additional_borrower" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSN #: 
+                    <input type="text" alt="" class="inputbox" name="additional_borrower_ssn" size="20" maxlength="11" value="">
+                    </label>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home / Cell #: 
+                    <input type="text" alt="" class="inputbox" name="purchaser_homeorcell_phone" size="20" maxlength="20" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work #: 
+                    <input type="text" alt="" class="inputbox" name="purchaser_work_phone" size="20" maxlength="20" value="">
+                    </label>
+
+
+                    <hr>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seller(s): 
+                    <input type="text" alt="" class="inputbox" name="seller" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSN(s): 
+                    <input type="text" alt="" class="inputbox" name="seller_ssn" size="20" maxlength="30" value="">
+                    </label>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additional Seller: 
+                    <input type="text" alt="" class="inputbox" name="additional_seller" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSN #: 
+                    <input type="text" alt="" class="inputbox" name="additional_seller_ssn" size="20" maxlength="11" value="">
+                    </label>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home / Cell #: 
+                    <input type="text" alt="" class="inputbox" name="seller_homeorcell_phone" size="20" maxlength="20" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work #: 
+                    <input type="text" alt="" class="inputbox" name="seller_work_phone" size="20" maxlength="20" value="">
+                    </label>
+                    
+                    
+                    </fieldset>
+                    
+                    <br>
+                    
+                    <fieldset>
+                    <legend>Mortgage Information</legend>
+                    
+                    <h1>Primary Mortgage</h1>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lender (1): 
+                    <input type="text" alt="" class="inputbox" name="lender1_name" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sale Price: 
+                    <input type="text" alt="" class="inputbox" name="sale_price" size="20" maxlength="20" value="">
+                    </label><span class="required">*</span>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loan Amount: 
+                    <input type="text" alt="" class="inputbox" name="lender1_loan_amount" size="20" maxlength="20" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account #: 
+                    <input type="text" alt="" class="inputbox" name="lender1_account_num" size="20" maxlength="20" value="">
+                    </label>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 
+                    <input type="text" alt="" class="inputbox" name="lender1_contact" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone #: 
+                    <input type="text" alt="" class="inputbox" name="lender1_contact_phone" size="20" maxlength="20" value="">
+                    </label>
+
+                    <br>
+                        <label id="lender2add"><a onclick="add_lender('lender2');" style="text-decoration:underline;cursor:hand;cursor:pointer;">Add Secondary Mortgage...</a></label>
+
+                    <hr>
+                    
+            <div id="lender2" class="conf_form_author" style="display:none;visibility:hidden;">
+                    
+                    <h1>Secondary Mortgage</h1>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lender (2): 
+                    <input type="text" alt="" class="inputbox" name="lender2_name" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loan Amount: 
+                    <input type="text" alt="" class="inputbox" name="lender2_loan_amount" size="20" maxlength="20" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account #: 
+                    <input type="text" alt="" class="inputbox" name="lender2_account_num" size="20" maxlength="20" value="">
+                    </label>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 
+                    <input type="text" alt="" class="inputbox" name="lender2_contact" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone #: 
+                    <input type="text" alt="" class="inputbox" name="lender2_contact_phone" size="20" maxlength="20" value="">
+                    </label>
+            </div>
+
+            <div class="notice">
+                    <h1>NOTICE!</h1>
+            *If you are requesting Regency Title &amp; Closing, LLC to order payoffs of mortgages please provide a signed authorization form with SSN along with the mortgage account numbers. This will ensure that there are no delays at closing. </div>
+
+                    </fieldset>
+                    
+                    <br>
+                    
+                    <fieldset>
+                    <legend>Closing Information</legend>
+                    
+                    <label>Estimated Closing Date: 
+                    <input type="text" class="inputbox" name="estimated_close_date" id="estimated_close_date" size="10" maxlength="30" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;Will Regency Title be closing this loan?: 
+                    <select size="1" class="inputbox" name="using_regency" onchange="change_attorney_display('closing_attorney');">
+            <option value="Yes" selected="">Yes</option>
+            <option value="No">No</option>
+            </select>
+                    </label>
+
+            <div id="closing_attorney" class="conf_form_author" style="display:none;visibility:hidden;">
+                    
+                    <br>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attorney/Firm: 
+                    <input type="text" alt="" class="inputbox" name="closing_attorney" size="20" maxlength="80" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact: 
+                    <input type="text" alt="" class="inputbox" name="closing_attorney_contact" size="20" maxlength="80" value="">
+                    </label>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: 
+                    <input type="text" alt="" class="inputbox" name="closing_attorney_address" size="20" maxlength="100" value="">
+                    </label>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: 
+                    <input type="text" alt="" class="inputbox" name="closing_attorney_phone" size="20" maxlength="20" value="">
+                    </label>
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax Number: 
+                    <input type="text" alt="" class="inputbox" name="closing_attorney_fax" size="20" maxlength="20" value="">
+                    </label>
+            </div>
+
+                    <br>
+                    <br>
+                    
+                    <label>&nbsp;&nbsp;&nbsp;Special Instructions:<br> <br>
+
+                    
+                    </label>
+
+                    </fieldset>
+                    
+            <br>
+            <input class="buttons" type="submit" name="submitform" value="Submit Title Search Request">
+            
+            <p></p>
+            </form>
+        </div>
+</div>
