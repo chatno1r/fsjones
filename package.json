@@ -4,7 +4,8 @@
   "description": "Front end webpage for Frank Jones  regencytitleandclosing.com to be completed by ohmbru",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "source .variables && nodemon",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/chatno1r/fsjones#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "sendgrid": "^4.7.1"
   }
 }

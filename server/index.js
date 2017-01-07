@@ -1,9 +1,14 @@
 var path = require("path");
 var express = require("express");
+var api = require('./api');
+var bodyParser = require('body-parser');
 
 var app = express();
 var clientPath = path.join(__dirname, "../client")
 app.use(express.static(clientPath));
+app.use(bodyParser.json());
+
+app.use('/api', api);
 
 app.get("*", function(req, res, next) {
     if (isAsset(req.url)) {

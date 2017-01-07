@@ -7,4 +7,4 @@ angular.module("FSJones.services", [])
             $rootScope.seo[prop] = seoObj[prop];
         }
     }
-}])
+}]);

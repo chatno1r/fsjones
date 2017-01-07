@@ -12,6 +12,16 @@ angular.module("FSJones.controllers", [])
 
 }])
 
-.controller("ContactController", ["$scope", "$location", function($scope, $location) {
-    
+.controller("ContactController", ["$scope", "$location", 'Contact', function($scope, $location, Contact) {
+    $scope.sendEmail = function(){
+        var data = {
+            fromAddress: $scope.email,
+            subject: $scope.subject,
+            content: $scope.body
+        }
+        console.log(data);
+        var newEmail = new Contact(data);
+        console.log(newEmail);
+        newEmail.$save();
+    }
 }])

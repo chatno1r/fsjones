@@ -1,9 +1,25 @@
 <div class="container-fluid">
     <div id="welcometext">Contact Us</div>
-        <div id="address">
-            <p><strong>Regency Title & Closing, LLC</strong></p>
-            <p>500 Southland Dr Ste 230</p>
-            <p>Vestavia AL 35226</p>
-            <p>(205) 824-3838</p>
-        </div>   
+    <div id="address">
+        <p><strong>Regency Title & Closing, LLC</strong></p>
+        <p>500 Southland Dr Ste 230</p>
+        <p>Vestavia AL 35226</p>
+        <p>(205) 824-3838</p>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" ng-model="subject" placeholder="Subject" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" ng-model="email" placeholder="From" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" ng-model="body" placeholder="Comment" rows="5"></textarea>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default" type="submit" id="sendbutton" ng-click="sendEmail()">Send</button>
+                </div>
+            </div>
+    </div>   
 </div>

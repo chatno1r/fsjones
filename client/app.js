@@ -1,4 +1,4 @@
-angular.module("FSJones", ["ngRoute", "ngResource", "FSJones.controllers", "FSJones.services"])
+angular.module("FSJones", ["ngRoute", "ngResource", "FSJones.controllers", "FSJones.factories", "FSJones.services"])
 
 .config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
